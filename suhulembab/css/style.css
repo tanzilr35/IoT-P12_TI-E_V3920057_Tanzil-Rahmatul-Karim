@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+
+.sidebar-nav {
+  width: var(--offcanvas-width);
+  background-color:rgb(193, 17, 199);
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+
+.side,
+#side {
+  color: black;
+}
+
+.navbar {
+  background-color: rgb(189, 28, 175);
+}
+
+a .navbar-brand {
+  color: black;
+}
+
+.carddata {
+  /* background-color: red; */
+  background-image: -moz-linear-gradient(90deg, #b6459a 0%, #695be3 100%);
+  background-image: -webkit-linear-gradient(90deg, #b64587 0%, #7f5be3 100%);
+  background-image: -ms-linear-gradient(90deg, #b64587 0%, #9a5be3 100%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.overview-box .text {
+  font-weight: 300;
+  display: inline-block;
+}
+
+.overview-box .text-air {
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 80px;
+  display: inline-block;
+}
+
+.col a {
+  text-decoration: none;
+  color:black;
+  size: 30px
+}
+
+.overview-box .text h2 {
+  font-weight: 300;
+  color: black;
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.overview-item {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 30px;
+  padding-bottom: 0;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.overview-box .icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.overview-box-air .icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.overview-box .icon i {
+  font-size: 60px;
+  color: black;
+}
+
+.overview-box-air .icon i {
+  font-size: 60px;
+  color: #fff;
+}
+
+.overview-item--c1 {
+  /* background-image: -moz-linear-gradient(90deg, #3f5efb 0%, #fc466b 100%); */
+  background-image: -webkit-linear-gradient(90deg, #fb3fb3 0%, #6746fc 100%);
+  /* background-image: -ms-linear-gradient(90deg, #fcec0b 0%, #ED254E 100%); */
+}
+
+.overview-item--c2 {
+  /* background-image: -moz-linear-gradient(90deg, #11998e 0%, #ecef38 100%); */
+  background-image: -webkit-linear-gradient(90deg, #991177 0%, #525df0 100%);
+  /* background-image: -ms-linear-gradient(90deg, #11998e 0%, #38ef7d 100%); */
+}
+
+.overview-item--c3 {
+  /* background-image: -moz-linear-gradient(90deg, #ee0979 0%, #ff6a00 100%); */
+  background-image: -webkit-linear-gradient(90deg, #e2029f 10%, #5028c0 80%);
+  /* background-image: -ms-linear-gradient(90deg, #ee0979 0%, #ff6a00 100%); */
+}
+
+/* air */
+.overview-item--air {
+  background-image: -moz-linear-gradient(90deg, #e101ff 10%, #7023ff 80%);
+  background-image: -webkit-linear-gradient(90deg, #ff01c0 10%, #c287f3 80%);
+  background-image: -ms-linear-gradient(90deg, #ff0180 10%, #5323ff 80%);
+}
+
+.overview-chart {
+  height: 250px;
+  position: relative;
+}
+
+.overview-chart canvas {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+.tambah a {
+  color:pink;
+  text-decoration: none;
+  float: right;
+}
+
+.tambah {
+  color: pink;
+  float: right;
+  margin-bottom: 15px;
+
+}
+
+/* modal */
+.modal-body {
+  background-color: black !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.modal-header{
+  background-color: #b5c9bd;
+  height: 3px;
+}
+.modal-title{
+  color: black;
+}
+
+.modal-conten{
+  height: 8px;
+  background-color: black;
+}
+
+.box-2{
+  width: 500px;
+  padding: 30px;
+  position: absolute;
+  top: 135%;
+  transform: translate(-50%, -50%);
+}
